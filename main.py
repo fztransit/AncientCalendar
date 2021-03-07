@@ -56,7 +56,7 @@ def liFrame(li, year):
 	del data['入蔀年']
 	return data
 
-#data = liFrame(yjl, 455)
+#data = liFrame(jjl, 550)
 #print(data)
 
 
@@ -72,9 +72,9 @@ def data2csv(start_year, end_year, li):
 			data.to_csv(li.lm + '.csv', sep=',', header=True, index=False, encoding='utf_8_sig', mode='a')
 
 
-for wbxlf in wbxnb[2:]:
-	start_year, end_year = wbxnb[:2]
-	data2csv(start_year, end_year, wbxlf)
+for gll in gllb[2:]:
+	start_year, end_year = gllb[:2]
+	data2csv(start_year, end_year, gllb)
 
 
 for bxnf in bxnb:
